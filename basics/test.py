@@ -59,9 +59,9 @@
 # c = string[center1:] 
 # c1 = c[1:] 
 # print(b + 'K' + c1) 
-string = input()
-newString = (string[1:-1])
-print(string[-1]+newString+string[0])
+# string = input()
+# newString = (string[1:-1])
+# print(string[-1]+newString+string[0])
 
 
 
@@ -74,3 +74,109 @@ print(string[-1]+newString+string[0])
 #         print(f'{i}Fizz')
 #     else:
 #         print(i)
+
+
+
+# x=1
+# y=2
+# z=3
+# if x>z and y>z:
+#    print(z)
+# elif x<y and x<z:
+#     print(x)
+# else:
+#     print(y)
+
+# x = int(input()) 
+# y = int(input())
+# c = x//y 
+# d = x%y
+# if x%y==0:
+#     print('x не делится на y')
+#     print(f'Частное: {c}')
+#     print(f'Остаток: {d}')
+# else:
+#     print('x делится на y')
+#     print(f'Частное: {c}')
+#     print(f'Остаток: {d}')
+
+
+# a1= input()
+# a = list(a1)
+# counter = 0
+# qwerty1 = 0
+# if len(a) > 8 and any([x.isdigit() for x in a1]) and any([x.isupper() for x in a1]):
+#     qwerty1 += 1
+# qwerty = 'qwertyuiopasdfghjklzxcvbnmйцукенгшщзхъфывапролджэячсмитьбю'
+# for i in range(len(a) - 2):
+#     if a1[i:i + 3].lower() in qwerty:
+#         break
+#     else:
+#         counter = + 1
+# if int(counter) + int(qwerty1) == 2:
+#     print('ok')
+# else:
+#     print('error')
+
+# task1
+# password = input('Придумайте пароль:')
+# if password.isdigit() and len(password) >= 8:
+#     print('Ваш пароль сохранен')
+# if not password.isdigit():
+#     print('Ваш пароль должен хранить только числа')
+# if not len(password) >= 8:
+#     print('Ваш пароль должен содержать не менее 8 символов')
+
+# task2
+# math = int(input('введите ваш балл по математике: '))
+# engl = int(input('введите ваш балл по английскому: '))
+# litr = int(input('введите ваш балл по литературе: '))
+# c = (math + engl + litr)/3
+# if c > 69:
+#     print(f'Вы допущены к экзаменам. Ваш средний балл составляет{round(c, 1)}')
+# else:
+#     print(f'Вы не допущены к экзаменам. Ваш средний балл составляет{round(c, 1)} .Проходной балл выше 50')
+# import random
+# user = input("Сделайте выбор — камень, ножницы или бумага: ")
+# possible = ["камень", "бумага", "ножницы"]
+# computer = random.choice(possible)
+# if user == computer:
+#     print(f"Оба пользователя выбрали {user}. Ничья!!")
+# elif user == "камень":
+#     if computer == "ножницы":
+#         print("Камень выигрывает ножницы! Вы победили!")
+#     else:
+#         print("Бумага выигрывает камень! Вы проиграли.")
+# elif user == "бумага":
+#     if computer == "камень":
+#         print("Бумага выигрывает камень! Вы победили!")
+#     else:
+#         print("Ножницы выигрывает бумагу! Вы проиграли.")
+# elif user == "ножницы":
+#     if computer == "бумага":
+#         print("Ножницы выигрывает бумагу! Вы победили!")
+#     else:
+#         print("Камень выигрывает ножницы! Вы проиграли.")
+# import string
+# num = int(input())
+# book = chr(num)
+# if book in string.punctuation + string.digits:
+#     print(f'Это не буква, а символ "{book}"')
+# else:
+#     print(f'Это буква "{book}"')
+# count = '0'
+# number = input()
+# if number.isnumeric():
+#     count = number
+#     print(count)
+# else:
+#     print(count)
+# a = [1, 'xyi', True, 8.9]
+# for n in a:
+#     print(n)
+# name_of_list = 'jopaa'
+# new_list = list(name_of_list[round(len(name_of_list) / 2):] + name_of_list[:round(len(name_of_list) // 2)])
+# print(new_list)
+# list_ = ['world', 'hello'] 
+# new_list = len(list_)//2
+# print(new_list) 
