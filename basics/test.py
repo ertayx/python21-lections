@@ -180,3 +180,51 @@
 # list_ = ['world', 'hello'] 
 # new_list = len(list_)//2
 # print(new_list) 
+# a = {'x': 1, 'y': 2, 'z': 1}
+
+# print(a = dict.fromkeys[1])
+
+# a = {'x': 1, 'y': 2, 'z': 1}
+# b = list(a.keys())
+# print(a[2])
+
+
+
+
+# x = float(input('Введите возраст в человеческих годах: '))
+# if x == 1:
+#   print('вашему псу:',10.5 / 2,'собачьих лет')
+# elif x == 2:
+#   print('вашему псу: 10.5 собачьих лет')
+# elif x > 2:
+#   print('вашему псу:',x * 4+2.5,'собачьих лет')
+
+
+# x = int(input('Количество гостей:'))
+# gosti = {}
+# for i in range(1,x+1):
+#     y = input('Введите имена гостей:')
+#     gosti.setdefault(i, y)
+# print(gosti)
+
+# x = {1: 'a', 2: 'b', 3: 'c'}
+# y = {}
+# for key, val in x.items():
+#   y.update({val: key})
+#   y % 2
+# print(y)
+
+# spisok = [
+#     {'картошка': 5},
+#     {'огурец': 6},
+#     {'банан': 4}
+# ]
+# while spisok:
+#     jjj = input()
+#     for i in spisok:
+#         if jjj in i:
+#             del i[jjj]
+#             print(spisok)
+#     if not any (spisok):
+#         break
+# print('время платить ')
