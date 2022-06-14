@@ -228,3 +228,18 @@
 #     if not any (spisok):
 #         break
 # print('время платить ')
+
+# list_ = [1,2,3,2,3,4,1,23,4]
+# while list_:
+#     list_.remove(2)
+#     print(list_)
+# list_ = ['world', 'hello'] 
+# new_list = list_[::-1]
+# print(new_list)
+
+nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for res in nums:
+    if res < 5:
+        print(list(filter(res)))
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# print(list(filter(lambda elem: elem < 5, a)))
