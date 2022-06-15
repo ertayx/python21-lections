@@ -175,8 +175,10 @@
 # for n in a:
 #     print(n)
 # name_of_list = 'jopaa'
-# new_list = list(name_of_list[round(len(name_of_list) / 2):] + name_of_list[:round(len(name_of_list) // 2)])
-# print(new_list)
+# new_list = list(name_of_list[round(len(name_of_list) // 2 ):] )
+# new_list1 = list(name_of_list[:round(len(name_of_list) // 2 + 1)])
+# new_list2 = new_list + new_list1
+# print(new_list2)
 # list_ = ['world', 'hello'] 
 # new_list = len(list_)//2
 # print(new_list) 
@@ -229,17 +231,60 @@
 #         break
 # print('время платить ')
 
-# list_ = [1,2,3,2,3,4,1,23,4]
-# while list_:
-#     list_.remove(2)
-#     print(list_)
+list_ = [1,2,3,2,3,4,1,23,4]
+while 2 in list_:
+    list_.remove(2)
+    print(list_)
+    
 # list_ = ['world', 'hello'] 
 # new_list = list_[::-1]
 # print(new_list)
 
-nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-for res in nums:
-    if res < 5:
-        print(list(filter(res)))
-# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-# print(list(filter(lambda elem: elem < 5, a)))
+# nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# for res in nums:
+#     if res < 5:
+#         print(list(map(res)))
+# nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# res = list(filter(lambda elem: elem < 5, nums))
+# print(res)
+
+# list_ = list(input())
+# tuple_ = list_
+# print(tuple(tuple_))
+# print(tuple_)
+
+# new = input()
+# list_ = new.split(',')
+# tuple_ = tuple(list_)
+# print(list_)
+# print(tuple_)
+
+# list_ = [1, 2, 3, 4,]
+# for new_list in list_:
+#     print(str(new_list))
+
+# list_ = [1, 2, 3]
+# new_list = [str(x) for x in list_]
+# print (new_list)
+
+
+# list_ = ['1', '2', '3', '4', '5']
+# for i in range(list_):
+#     if i % 2 == 0 :
+#         print('четное')
+#     elif i % 2 !=  0:
+#         print ('нечетное')
+
+
+# captains = ['Janeway', 'Picard', 'Sisko']
+ 
+# for i in range(len(captains)):
+#     if 
+
+# string = 'HelloWorld!'
+# string1 = 'HelloWorld!'
+# center = int(len(string)/2)
+# center1 = int(len(string)/2)
+# b = string[:center] 
+# c = string[center1:] 
+# print(b + 'K' + c) 
