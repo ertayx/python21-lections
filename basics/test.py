@@ -213,7 +213,6 @@
 # y = {}
 # for key, val in x.items():
 #   y.update({val: key})
-#   y % 2
 # print(y)
 
 # spisok = [
@@ -231,10 +230,10 @@
 #         break
 # print('время платить ')
 
-list_ = [1,2,3,2,3,4,1,23,4]
-while 2 in list_:
-    list_.remove(2)
-    print(list_)
+# list_ = [1,2,3,2,3,4,1,23,4]
+# while 2 in list_:
+#     list_.remove(2)
+#     print(list_)
     
 # list_ = ['world', 'hello'] 
 # new_list = list_[::-1]
@@ -288,3 +287,100 @@ while 2 in list_:
 # b = string[:center] 
 # c = string[center1:] 
 # print(b + 'K' + c) 
+
+# a = {'a': 1, 'b': 4, 'c': 1, 'd': 5, 'e': 6} 
+# for b in a.values():
+#     if a % 2 != 0:
+#         print(b)
+# list_ = [1, 2, 3, 4, 5]
+# for b in list_:
+#     if b % 2 == 0:
+#         b.update()
+# a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
+# temp = dict()
+# for key in a:
+#     temp[key] = a[key] / 5
+# print(temp)
+
+# a = {'a': 1, 'b': 2, 'c': 3} 
+# for k,v in a.items():
+#     print(v[::-1],k[::-1])
+
+# a = {'a': 1, 'b': 2, 'c': 3} 
+# b = {}
+# for k,v in a.items():
+#     b.update({v: k})
+# print(b)
+
+# a = {'a': 3, 'b': 2}
+# b = sum(a.values())
+# print(b)
+
+# a1 = {'a':1}
+# a2 = dict(a = 2)
+# a3 = dict([("Russia", "Moscow")])
+
+# string = "pythonist" 
+# b = list(string)
+# dict_ = dict.fromkeys(b, 1)
+# for i in dict_.keys():
+#     if i == 2:
+#         dict_+1
+# print(dict_)
+
+# str1 = 'pythonist'
+# my_dict = {i: str1.count(i) for i in str1}
+# print(my_dict)
+
+
+# list_ = [1, 2, 3, 4, 5]
+# new_list = []
+# for i in list_:
+#     if i % 2 == 0:
+#         new_list.append('четное')
+#     else:
+#         new_list.append('нечетное')
+# print(new_list)
+
+# list_ =  [1, 2, 3]
+# if list_:
+#   list_ = [1,2,3]
+# if (list_.count([0]) < 1) or (list_.count([1]) < 1) or (list_.count([2]) < 3):
+#     print('yes')
+# else:
+#     print('ERROR')
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# new_list = [i for i in len(list_name) if i >= 4 ]
+# print(new_list)
+
+# dict_ = {1: None, 2: None, 3: None, 4: None, 5: 'efrfe', 6: None, 7: None, 8: None, 9: None, 10: None}
+# newdict = {k: k**2 for k in dict_.keys()}
+# print((newdict))
+# print(list(dict_.keys()))
+
+# dict_ = {k: k**2 for k in  range(1,11)}
+# print(dict_)
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# new_list = [ 'shorter' if len(i) <=4 else 'longer' for i in list_name]
+# print(new_list)
+
+# n = int(input())
+# dict_ = {i: i*i  for i in range(1,501) if i%9==0 }
+# print(dict_)
+
+# a = {'a': 1, 'b': 5, 'c': 4, 'd': 3}
+# dict_ = {
+#     key : list(range(1, value + 1))
+#     for key, value in a.items() 
+# }
+# print(dict_)
+
+# dict_ = {'first': 1, 'second': 2, 'third': 3}
+# a = { key: 'even' if  values % 2==0 else 'odd' for key, values in dict_.items() }
+# print(a)
+
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list_ = [list1 for list1 in str.split(string_) if list1.isdigit()]
+# print(list_)
