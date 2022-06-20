@@ -66,7 +66,7 @@
 
 
 # for i in range(1,101):
-#     if i % 3 == 0 and i % 5 == 0:
+# if i % 3 == 0 and i % 5 == 0:
 #         print(f'{i} FizzBuzz')
 #     elif i % 5 == 0:
 #         print (f'{i}Buzz')
@@ -384,3 +384,189 @@
 # string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
 # list_ = [list1 for list1 in str.split(string_) if list1.isdigit()]
 # print(list_)
+
+# dict_ = {
+#     'Timur': {'history': 90, 'math': 95, 'literature': 91},
+ 
+#     'Olga': {'history': 92, 'math': 96, 'literature': 81},
+ 
+#     'Nik': {'history': 84, 'math': 85, 'literature': 87}
+#     }
+# new_dict = {key:
+#     str(list(({inner_key: inner_value for inner_key, inner_value in value.items() if inner_value == max(list(value.values()))}).keys())).lstrip("['").rstrip("]'")
+#     for key, value in dict_.items()}
+# print(new_dict)
+
+# lst = [8, 2, 6, 4, 3, 1, 10]
+
+# # Filter all elements <8
+# small = [x for x in lst if x < 8]
+# print(lst)
+# print(small)
+
+# a = input()
+# b = ['a','e','y','u','i','o']
+# ab = [len(item) for item in a if b in a ]
+# print(ab)
+
+# print(len([1 for x in list(input()) if x in ['a', 'e', 'i', 'o', 'u', 'y']]))
+
+# my_dict = {'first': {'a': 1}, 'second': {'b': 2}} 
+# dict_ = {key: val2 for key, val in my_dict.items() for val2 in val.values()}
+# print(dict_)
+
+# list_ = [float(i//2) for i in range(0,11) if i %2==0]
+# print(list_)
+
+# dict_ = {1:'a', 2:'bar', 3:'c'}
+# n = {key: len(key) for key in dict_.keys()if key%2==0 }
+# print(n)
+
+# x = {1:'aasda'}
+# b = list(x.values())
+# c = b.pop()
+# print(str(len(c)))
+
+# dict_ = {1:'a', 2:'bro', 3:'re'}
+# res = {key:len(val) **3 if key % 2!=0 else len(val) for key,val in dict_.items()  }
+# print(res)
+
+# dict_ = {1: 'hello', 2: {'makers': 2, 'bootcamp': 4}, 'makers': 6, 3: 'bootcamp'}
+# res = {
+#     key if type(key) == int else val
+#     : 
+#     val if type(val) != dict else {val2: key2 for key2, val2 in val.items()}
+#     for key, val in dict_.items()
+# }
+# print(res)
+
+# set1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+# set2 = {8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+# full_set = {set.union(set1,set2)}
+# i = 'В этом сете было 3 повторения, его длина составляет 17'
+# x = { i for i in full_set if full_set<20 }
+# print(full_set)
+
+# from random import shuffle
+# sa = list(range(1,21))
+# sb = list(range(1,21))
+# shuffle(sa)
+# shuffle(sb)
+# a = {sa.pop() for _ in range(10)}
+# b = {sb.pop() for _ in range(10)}
+# ab = a | b
+# n = len(ab)
+# print(ab)
+# print(f'В этом сете было {20-n} повторения, его длина составляет {n}')
+
+# set1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+# set2 = {8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
+# full_set = set.union(set1,set2)
+# n = len(full_set)
+# print(full_set)
+# print(f'В этом сете было {20-n} повторения, его длина составляет {n}')
+
+# try:
+#     age = int(input())
+#     if age<18:
+#         raise ValueError('Доступ запрещён')
+# except:
+#     print('Введён некорректный возраст')  
+# else:
+#     print('Спасибо')
+
+# finally:
+#     print('До свидания!')
+
+# try:
+#     cash = int(input())
+#     if cash<0:
+#         raise ValueError('Сумма не может быть отрицательной!')
+#     print(cash) 
+# except Exception as e:
+#     print(e)
+     
+
+# try:
+#     cash = int(input('Сумма в бумажнике? '))
+#     if cash < 0: raise
+# except ValueError:
+#     print('Ожидается ввод числа')
+# except:
+#     print('Сумма не может быть отрицательной!')
+
+# cash = int(input())
+# if cash<0:
+#     raise ValueError('Сумма не может быть отрицательной!')
+# else:
+#     print(cash)
+
+# try:
+#     inp1 = input()
+#     inp2 = input()
+#     if type(int(inp1))  == int and type(int(inp2)) == int:
+#         print(int(inp1)+int(inp2))  
+# except:
+#      if type(str(inp1))  == str and type(str(inp2)) == str:
+#         print(str(inp1)+str(inp2))  
+
+
+# inp1 = input()
+# list_ = []
+# for t in inp1.split():
+#     try:
+#         list_.append(float(t))
+#     except ValueError:
+#         pass
+#         raise('Данный элемент не является числом!') 
+# print(list_)
+
+# for i in a:
+#     b.append(i)
+#     if i == str:
+        
+#         print('Данный элемент не является числом')
+#     print(i.isdigit())
+#     print(b.append(i))
+
+
+inp1 = input()
+
+list_ = []
+for t in inp1.split():
+    try:
+        list_.append(float(t))
+    except Exception as e:
+        raise e('Данный элемент не является числом!')
+    else:
+        print(list_)
+print(list_)
+ 
+
+# inp1 = input()
+
+# list_ = []
+# for t in inp1.split():
+#     try:
+#         list_.append(float(t))
+#     except :
+#          raise ValueError('Данный элемент не является числом!')
+#     else:
+#         print(list_)
+# print(list_)
+
+
+# inp1 = input()
+# try:
+#     list_ = [list1 for list1 in str.split(inp1) if list1.isdigit()]
+# except ValueError:
+#     print("Данный элемент не является числом")
+# print(list_)
+
+
+# list_ = list(range(0,101))
+# newlist = []
+# for i in list_:
+#     if i % 2==0:
+#         newlist.append(i)
+# print(newlist)
