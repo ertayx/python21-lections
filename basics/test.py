@@ -559,8 +559,8 @@
 # inp1 = input()
 # try:
 #     list_ = [list1 for list1 in str.split(inp1) if list1.isdigit()]
-# except ValueError:
-#     print("Данный элемент не является числом")
+# except Exception:
+#     raise("Данный элемент не является числом")
 # print(list_)
 
 
@@ -587,29 +587,29 @@
 
 # a = input('хотите продолжить?\n yes or no')
 # if a == 'no':
-import random
-#генерируем случайное число от 1до15
-rand_choice=random.randint(1,15)
-#функция на проверку коректности 
-#  введеных данных
-z=input("укажите имя:\n")
-def proverka(msg):
-    while True:
-        try:
-            p=int(input(msg))
-            return p
-        except ValueError:
-            print(z.title(),",","не тупи вводим только числа!!!")
-i = 0 #счетчик
-x=input("попробуй угадать число,от 1 до 15\nкоторое загадала программа.\n для продолжения нажмите ввод")
-while x!=rand_choice:
-    x=proverka(":")
-    if x <rand_choice:
-        print("маловато",x)
-    elif x >rand_choice:
-        print("многовато",x)
-    else:
-        print("победа!!!",)
-    i +=1
+# import random
+# #генерируем случайное число от 1до15
+# rand_choice=random.randint(1,15)
+# #функция на проверку коректности 
+# #  введеных данных
+# z=input("укажите имя:\n")
+# def proverka(msg):
+#     while True:
+#         try:
+#             p=int(input(msg))
+#             return p
+#         except ValueError:
+#             print(z.title(),",","не тупи вводим только числа!!!")
+# i = 0 #счетчик
+# x=input("попробуй угадать число,от 1 до 15\nкоторое загадала программа.\n для продолжения нажмите ввод")
+# while x!=rand_choice:
+#     x=proverka(":")
+#     if x <rand_choice:
+#         print("маловато",x)
+#     elif x >rand_choice:
+#         print("многовато",x)
+#     else:
+#         print("победа!!!",)
+#     i +=1
  
-print("Попыток ", i)
+# print("Попыток ", i)
