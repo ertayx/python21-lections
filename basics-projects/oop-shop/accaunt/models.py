@@ -2,6 +2,7 @@ import permissions
 
 class User:
     objects = []
+
     def __init__(self, email, name, sex):
         self.email = email
         self.name = name
@@ -9,6 +10,7 @@ class User:
         self.__password = None
         self.is_authenticated = False
         print(f"успешно создан юзер {self.email}")
+        # в objects добавляем обьект
         User.objects.append(self)
 
     def register(self, password, password_confirm):

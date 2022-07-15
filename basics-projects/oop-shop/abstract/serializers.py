@@ -14,6 +14,7 @@ class BaseSerializer:
     def serialize_queryset(self, queryset=None):
         if queryset is None:
             queryset = self.Meta.queryset
+
         list_ = []
         for obj in queryset:
             dict_ = self.serialize_obj(obj)
