@@ -61,7 +61,7 @@ def delete(u_id):
 
 def update(u_id):
         validate_id(database.keys(), u_id)
-        retrieve(u_id, update=True)
+        retrieve(u_id)
         # принимаем новые данные
         mark = str(input("Введите марку: "))
         model = str(input("Введите модель: "))
